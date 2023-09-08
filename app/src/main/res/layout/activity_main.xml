@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/txTitle"
+       android:text="Teenage Mutant Turttle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       android:textSize="30dp"
+       android:textStyle="bold"
+       />
+   <ScrollView
+       android:id="@+id/scroll"
+       android:layout_width="wrap_content"
+       android:layout_height="100dp"
+       android:layout_margin="10dp"
+       app:layout_constraintTop_toBottomOf="@id/txTitle"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+    >
+      <TextView
+          android:id="@+id/txDescription"
+          android:text="Donatello o Donnie es un personaje ficticio y uno de los cuatro personajes principales de los cómics Tortugas Ninja y todos los medios relacionados. Es la tortuga favorita del cocreador Peter Laird.Por lo general, se le representa con una bandana de ojos púrpura. Su arma principal de la firma son sus (2) bastones efectivos. En todos los medios, él es el más inteligente de las cuatro tortugas. Él aparece como 4 'en altura en el lanzamiento de la figura de acción original. Donnie a menudo habla en ‘parloteo tecnológico’, con una aptitud natural para la ciencia y la tecnología. Es el tercer mayor / segundo más joven de las tortugas. Como todos los hermanos, lleva el nombre de un artista del Renacimiento; en este caso, lleva el nombre del escultor italiano Donatello."
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="20dp"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          />
+
+   </ScrollView>
+   
+   <ImageView
+       android:id="@+id/imgTurtle"
+       android:layout_width="wrap_content"
+       android:layout_height="410dp"
+       android:src="@drawable/donne"
+       android:layout_margin="20dp"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/scroll"
+       />
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/imgTurtle">
+
+      <Button
+          android:id="@+id/btnDonee"
+          android:text="Donne"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="true"
+          />
+      <Button
+          android:id="@+id/btnLeo"
+          android:text="Leo"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="true"
+          />
+      <Button
+          android:id="@+id/btnMikey"
+          android:text="Mikey"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="true"
+          />
+      <Button
+          android:id="@+id/btnRaph"
+          android:text="Raph"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="true"
+          />
+   </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
